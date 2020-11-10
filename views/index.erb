@@ -6,13 +6,7 @@
     </head>
     <body>
         <h1>おみくじ</h1>
-        <% if params['act'] != nil %>
-            <% fortune = ['大吉', '吉', '中吉', '小吉', '末吉', '凶'] %>
-            <% result = fortune[rand(0..5)] %>
-        <% else %>
-            <% result = 'ありません' %>
-        <% end %>
-        <p>おみくじの結果：<%= result %></p>
+        <p>おみくじの結果：無し</p>
         <form action="/" method="POST">
             <button type="submit" name="act" value="draw">おみくじをひく！</button>
         </form>
